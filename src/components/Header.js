@@ -1,7 +1,10 @@
 import logo from '../assets/logo.png';
 import {MenuIcon} from '@heroicons/react/outline';
+import {useAuthState} from 'react-firebase-hooks/auth';
 
 const Header = () => {
+
+  const [user] = useAuthState(auth);
 
 
   return (
